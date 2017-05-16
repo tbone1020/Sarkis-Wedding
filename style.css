@@ -81,10 +81,8 @@ body {
 	width:100px;
 	margin: 0;
 }
-.proposal-section,
-.bride-groom-section {
+.proposal-section, .bride-groom-section {
 	padding: 50px 0;
-	border-bottom: 1px solid #000;
 }
 .img-placeholder {
 	position: relative;
@@ -133,6 +131,14 @@ body {
 	background: rgba(85, 80, 79, 0.8);
 	position: absolute !important;
 	height: 100%;
+}
+.wedding-image-section {
+	padding: 50px 0;
+	border-top: 3px solid white;
+}
+.address-header {
+	color: #F9DDD3;
+	font-size: 26px;
 }
 .map-legend address {
     color: white;
