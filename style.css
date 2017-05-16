@@ -81,44 +81,17 @@ body {
 	width:100px;
 	margin: 0;
 }
-.proposal-section, .bride-groom-section {
+.proposal-section {
+	background: url('http://placehold.it/1500x350');
+	background-size: contain;
+	padding: 100px 0;
+}
+
+.bride-groom-section {
 	padding: 50px 0;
-}
-.img-placeholder {
-	position: relative;
-	height: 250px;
-}
-.bg-img-placeholder {
-	background: #bdbdbd;
-	height: 400px;
-	position: relative;
-}
-.img-placeholder:after {
-	content: 'Placeholder Image';
-	color: white;
-	position: absolute;
-	top:50%;
-	left:50%;
-	width: 150px;
-	text-align: center;
-	height: 24px;
-	margin-top: -12px;
-	margin-left: -75px;
-}
-.img-placeholder:before {
-	content: '';
-	background: #bdbdbd;
-	position: absolute;
-	top:0;
-	left:0;
-	height: 100%;
-	width: 100%;
 }
 .Proposal-text {
 	color: white;
-}
-.img-border {
-	border:1px solid white;
 }
 .iframe-map {
 	width: 100%;
