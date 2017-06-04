@@ -1,3 +1,4 @@
+
 /*****************************************
 *
 * Developer: Trent Teebken
@@ -14,6 +15,28 @@
 
 
 
+/**** Header ***/
+
+h1.section-header {
+	color: black;
+	font-size: 30px;
+}	
+h4.section-subheader {
+	font-style: italic;
+	font-size: 15px;
+}
+.wedding-party {
+	padding: 60px 0;
+}
+.grooms {
+	border-right:1px solid #bbb;
+}
+h3.parts-names {
+	font-size: 15px;
+}
+p.brides-grooms-text {
+	font-size: 12px;
+}
 body {
 	font-family: helvetica;
 	margin: 0;
@@ -74,25 +97,49 @@ body {
 	width:100px;
 	margin: 0;
 }
-.proposal_section {
+.proposal-section {
+	/*background: url('http://placehold.it/1500x350');
+	background-size: contain;*/
+	background: #F9DDD3;
+	padding: 60px 0;
+}
+
+.bride-groom-section {
 	padding: 50px 0;
-	border-bottom: 2px solid #000;
 }
-.img-placeholder {
-	position: relative;
-	height: 250px;
+.Proposal-text {
+	color: black;
 }
-.img-placeholder:before {
-	content: '';
-	background: #bdbdbd;
-	position: absolute;
-	top:0;
-	left:0;
-	height: 100%;
+#map {
 	width: 100%;
+	height: 400px;
+	position: relative;
+	z-index: 5;
 }
-.img-placeholder:after {
-	content: 'Placeholder Image';
-	top:50%;
-	left:50%;
+.map-section {
+	position: relative;
+}
+.map-legend {
+	background: rgba(85, 80, 79, 0.8);
+	position: absolute !important;
+	height: 100%;
+	z-index: 9;
+}
+.wedding-image-section {
+	padding: 50px 0;
+	border-top: 3px solid white;
+}
+.address-header {
+	color: #F9DDD3;
+	font-size: 26px;
+}
+.map-legend address {
+    color: white;
+    font-size: 20px;
+    margin: 130px auto 0;
+}
+
+.santa-barbara-section {
+	background: #F9DDD3;
+	height: 400px;
 }
