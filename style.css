@@ -17,10 +17,31 @@
 /**** Header ***/
 
 h1.section-header {
-
+	font-family: 'Euphoria Script', cursive;
+	color: black;
+	font-size: 35px;
+}	
+h4.section-subheader {
+	font-style: italic;
+	font-size: 15px;
 }
-
-
+.wedding-party {
+	padding: 60px 0;
+}
+.grooms {
+	border-right:1px solid #bbb;
+}
+h3.parties-name {
+	font-family: 'Euphoria Script', cursive;
+	font-size: 30px;
+}
+p.brides-grooms-text {
+	font-size: 12px;
+}
+.card-title {
+	font-family: 'Euphoria Script', cursive;
+	font-size: 35px;
+}
 body {
 	font-family: helvetica;
 	margin: 0;
@@ -58,6 +79,7 @@ body {
 .hero-text {
 	/*background: rgba(249, 221, 211, 0.4); BACK UP*/
 	background: rgba(0, 0, 0, 0.4);
+	font-family: 'Euphoria Script', cursive;
 	color: white;
 	font-size: 50px;
 	position: relative;
@@ -82,20 +104,23 @@ body {
 	margin: 0;
 }
 .proposal-section {
-	background: url('http://placehold.it/1500x350');
-	background-size: contain;
-	padding: 100px 0;
+	/*background: url('http://placehold.it/1500x350');
+	background-size: contain;*/
+	background: #F9DDD3;
+	padding: 60px 0;
 }
 
 .bride-groom-section {
 	padding: 50px 0;
 }
 .Proposal-text {
-	color: white;
+	color: black;
 }
-.iframe-map {
+#map {
 	width: 100%;
 	height: 400px;
+	position: relative;
+	z-index: 5;
 }
 .map-section {
 	position: relative;
@@ -104,6 +129,7 @@ body {
 	background: rgba(85, 80, 79, 0.8);
 	position: absolute !important;
 	height: 100%;
+	z-index: 9;
 }
 .wedding-image-section {
 	padding: 50px 0;
@@ -118,8 +144,8 @@ body {
     font-size: 20px;
     margin: 130px auto 0;
 }
-
 .santa-barbara-section {
 	background: #F9DDD3;
-	height: 400px;
+	height: 320px;
+	padding:50px 0;
 }
