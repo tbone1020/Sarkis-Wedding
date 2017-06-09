@@ -16,11 +16,26 @@
 
 /**** Header ***/
 
+body {
+	margin: 0;
+	padding: 0;
+}
 h1.section-header {
-	font-family: 'Euphoria Script', cursive;
+    font-family: 'Euphoria Script', cursive;
 	color: black;
 	font-size: 35px;
 }	
+.hero-text h1 {
+	margin-bottom: 0;
+	font-size: 60px; 
+}
+.bride-groom-section h1 {
+	font-family: 'Euphoria Script', cursive;
+}
+h3.parties-name {
+	font-family: 'Euphoria Script', cursive;
+	font-size: 30px;
+}
 h4.section-subheader {
 	font-style: italic;
 	font-size: 15px;
@@ -28,12 +43,8 @@ h4.section-subheader {
 .wedding-party {
 	padding: 60px 0;
 }
-.grooms {
+.bridesmade {
 	border-right:1px solid #bbb;
-}
-h3.parties-name {
-	font-family: 'Euphoria Script', cursive;
-	font-size: 30px;
 }
 p.brides-grooms-text {
 	font-size: 12px;
@@ -41,11 +52,6 @@ p.brides-grooms-text {
 .card-title {
 	font-family: 'Euphoria Script', cursive;
 	font-size: 35px;
-}
-body {
-	font-family: helvetica;
-	margin: 0;
-	padding: 0;
 }
 
 .container {
@@ -61,7 +67,7 @@ body {
 	text-align: center;
 }
 .hero-section {
-	background: url('images/hero-image.jpg');
+	background: url('images/riviera-mansion.jpg');
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -77,17 +83,22 @@ body {
 	left: 0;
 }
 .hero-text {
-	/*background: rgba(249, 221, 211, 0.4); BACK UP*/
-	background: rgba(0, 0, 0, 0.4);
-	font-family: 'Euphoria Script', cursive;
-	color: white;
-	font-size: 50px;
-	position: relative;
-	top:30%;
-	padding: 35px 0;
-	margin: 0 auto;
-	text-align: center;
-	width:450px;
+	background: rgba(249, 221, 211, 0.7);
+    /*background: rgba(0, 0, 0, 0.4);*/
+    font-family: 'Euphoria Script', cursive;
+    color: black;
+    font-size: 50px;
+    position: relative;
+    top: 26%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 550px;
+}
+.hero-text img {
+	display: block;
+	width: 90%;
+	margin:15px auto;
 }
 .timeWrap {
 	display: inline-block;
@@ -124,6 +135,7 @@ body {
 }
 .map-section {
 	position: relative;
+	border-top: 2px solid white;
 }
 .map-legend {
 	background: rgba(85, 80, 79, 0.8);
@@ -136,8 +148,9 @@ body {
 	border-top: 3px solid white;
 }
 .address-header {
+	font-family: 'Euphoria Script', cursive;
 	color: #F9DDD3;
-	font-size: 26px;
+	font-size: 35px;
 }
 .map-legend address {
     color: white;
