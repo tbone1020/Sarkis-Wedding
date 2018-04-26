@@ -12,7 +12,11 @@
 
 
 
-
+body {
+	font-family: 'EB Garamond', serif !important;
+	margin: 0;
+	padding: 0;
+}
 
 /**** Hover states ****/
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
@@ -20,14 +24,11 @@
 }
 
 
-
-
-
 /**** Headers ****/
 
-body {
-	margin: 0;
-	padding: 0;
+
+.welcome h1 {
+    font-family: 'Euphoria Script', cursive;
 }
 h1.section-header {
     font-family: 'Euphoria Script', cursive;
@@ -38,8 +39,14 @@ h1.section-header {
 	margin-bottom: 0;
 	font-size: 60px; 
 }
-.bride-groom-section h1 {
+
+
+.santa-barbara-section h1 {
 	font-family: 'Euphoria Script', cursive;
+}
+
+.santa-barbara-section h3 {
+	font-family: 'EB Garamond', serif;
 }
 h3.parties-name {
 	font-family: 'Euphoria Script', cursive;
@@ -49,11 +56,31 @@ h4.section-subheader {
 	font-style: italic;
 	font-size: 15px;
 }
+.wedding-party h1 {
+	font-family: 'Euphoria Script', cursive;
 
+}
+footer h1 {
+
+	font-family: 'Euphoria Script', cursive;
+}
 /*** Navigation ***/
 
-.faded-dark-bg {
+
+.navbar-toggler i {
+	color: white;
+	font-size: 30px;
+}
+.navbar-light .navbar-toggler {
+	border-color: white !important;
+}
+nav .navbar-toggler-right {
+	right: 0 !important;
+}
+.nav-container {
 	background: rgba(85, 80, 79, 0.6);
+}
+.faded-dark-bg {
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
 	color: white;
@@ -61,6 +88,14 @@ h4.section-subheader {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
 	color: #F9DDD3 !important;
 }
+footer a {
+	color: white;
+	text-decoration: underline;
+}
+footer a:hover {
+	color: #F9DDD3;
+}
+
 
 .wedding-party {
 	padding: 60px 0;
@@ -77,20 +112,17 @@ p.brides-grooms-text {
 }
 
 .container {
-	display: block;
-	width:960px;
-	margin: 0 auto;
+	width: 100%;
+}
+.countdown-container {
+	/*background: #F9DDD3;*/
 }
 #countdown{
 	font-size: 30px;
-	position: relative;
-	top: -25px;
-	padding: 0 25px;
-	text-align: center;
 }
 .hero-section {
 	background: url('images/riviera-mansion.jpg');
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 	position: relative;
 	height: 500px;
@@ -125,27 +157,36 @@ p.brides-grooms-text {
 .timeWrap {
 	display: inline-block;
 	vertical-align: top;
-	background: #F9DDD3;
 	color: black;
-	padding: 0 10px;
-	height: 50px;
-	line-height: 50px;
+	font-size: 35px;
+	line-height: 40px;
 	text-align: center;
 }
+.time-inc {
+	font-size: 15px;
+}
 .container .timeWrap:first-child {
-	width:100px;
-	margin: 0;
+
+}
+.welcome {
+	position: relative;
 }
 .proposal-section {
-	/*background: url('http://placehold.it/1500x350');
-	background-size: contain;*/
 	background: #F9DDD3;
 	padding: 60px 0;
 }
 
-.bride-groom-section {
-	padding: 50px 0;
+.welcome:before {
+	background: url("images/floral.png");
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 244px;
+	height: 175px;
+	z-index: 5;
 }
+
 .Proposal-text {
 	color: black;
 }
@@ -165,22 +206,88 @@ p.brides-grooms-text {
 	height: 100%;
 	z-index: 9;
 }
+.map-legend address {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.map-legend small {
+	color: white;	
+	font-size: 15px;
+}
 .wedding-image-section {
 	padding: 50px 0;
 	border-top: 3px solid white;
 }
-.address-header {
+.info-header {
 	font-family: 'Euphoria Script', cursive;
 	color: #F9DDD3;
 	font-size: 35px;
 }
-.map-legend address {
-    color: white;
-    font-size: 20px;
-    margin: 130px auto 0;
+.info-text {
+	font-family: 'EB Garamond', serif !important;
+	color: white;
+	font-size: 25px;
 }
 .santa-barbara-section {
 	background: #F9DDD3;
-	height: 320px;
 	padding:50px 0;
+}
+.santa-barbara-section .card-title {
+	font-size: 19px;
+	height: 45px;
+}
+.santa-barbara-section .card-block {
+	min-height: 195px;
+}
+footer {
+	background: #55504f;
+	color: white;
+}
+.more-hotels {
+	font-size: 20px;
+}
+
+.registry {
+	background: white;
+	position: relative;
+}
+.registry:before {
+	background: url("images/floral_small.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+@media (max-width:991px) {
+	.bridesmade {
+		border-right: 0;
+	}
+	.santa-barbara-section .card-title {
+    	font-size: 20px;
+	}
+	.welcome:before,
+	.registry:before {
+		display: none;
+	}
+	.hero-text {
+		width: 310px;
+	}
+	.hero-text h1 {
+		font-size: 40px;
+	}
+	.hero-section {
+		height: 370px;
+	}
+	.map-legend {
+		position: relative !important;
+	}
+	.navbar {
+		min-height: 57px;
+	}
 }

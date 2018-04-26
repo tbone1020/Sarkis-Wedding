@@ -1,13 +1,10 @@
-/*
-	Google maps api key: AIzaSyB73PQ6r4IRxUGKYkWzV4zP2Nux2Mt641w
-*/
 
 // Countdown 	
 $("#countdown").countdown("2017/08/04", function(event) {
 
 	$(this).html(
 		event.strftime(
-		'<div class="timeWrap">%D days</div><div class="timeWrap">%H Hours</div><div class="timeWrap">%M Minutes</div>')
+		'<div class="col-xl-1 col-lg-1 col-md-3 col-3 offset-xl-4 offset-lg-4 offset-md-0 offset-0 timeWrap text-center">%D <div class="time-inc">days</div></div><div class="col-xl-1 col-lg-1 col-md-3 col-3 offset-md-0 offset-0 timeWrap text-center">%H <div class="time-inc">Hours</div></div><div class="col-xl-1 col-lg-1 col-md-3 col-3 offset-md-0 offset-0 timeWrap text-center">%M <div class="time-inc">Minutes</div></div><div class="col-xl-1 col-lg-1 col-md-3 col-3 offset-md-0 offset-0 timeWrap text-center">%S <div class="time-inc">Seconds</div></div>')
 	);
 });
 
@@ -17,6 +14,7 @@ function initMap() {
 	var uluru = {lat: 34.4274322, lng: -119.704114};
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 15,
+		scrollwheel: false,
 		center: uluru,
 		mapTypeControl: true,
         mapTypeControlOptions: {
